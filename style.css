@@ -3,45 +3,60 @@ body {
     margin: 0;
     justify-items: center;
     background: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.outer {
+    display: grid;
+    grid-template-rows: 100px 70vh;
+    width: 100%;
+    height: 100%;
+    border: .5px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .header {
-    width: 98%;
+    width: 100%;
     display: flex;
     color: white;
-    background-color: cyan;
+    background-color: rgb(132, 186, 243);
     justify-items: center;
     align-items: center;
-    padding: 10px;
 }
 .logo {
-    width: 10vh;
+    margin: 10px;
+    width: 80px;
+    border-radius: 999px;
 }
-nav a {
+.navigation {
+    border: .5px solid black;
+    background-color: rgb(132, 186, 243);
+}
+.navbox {
+    display: block;
+    width: 100px;
+    height: 30px;
+}
+.navbox:hover {
+    background-color: rgb(132, 132, 255);
+}
+a {
   text-decoration: none;
-  font-size: 30px;
-  padding: 10px;
 }
 .main-content {
-    padding: 20px;
     display: flex;
-    flex-direction: row;
+    width: 100vw;
 }
 .wrapper {
-  border: 1px solid black;
-  width: 90vh;
-  height: 90vh;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
 .news {
     display: flex;
     flex-direction: column;
-    width: 200px;
     color: white;
-    background-color: cyan;
+    background-color: rgb(132, 186, 243);
     font-size: 16px;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
 }
 #newstext {
     color: blue;
@@ -54,7 +69,7 @@ nav a {
     width: 100%;
     height: 100px;
     color: blue;
-    background-color: cyan;
+    background-color: rgb(132, 186, 243);
     justify-content: center;
     align-items: center;
 }
