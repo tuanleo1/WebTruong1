@@ -53,9 +53,11 @@ a {
     color: white;
     background-color: rgb(132, 186, 243);
     font-size: 16px;
+    padding: 5px;
 }
 #newstext {
     color: black;
+    padding: 5px;
 }
 .sidebar {
     border: .5px solid black;
