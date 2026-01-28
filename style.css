@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    width: 98%;
+    display: flex;
+    color: white;
+    background-color: cyan;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    width: 10vh;
+}
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper {
+  border: 1px solid black;
+  width: 90vh;
+  height: 90vh;
+  margin: 10px;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    color: white;
+    background-color: cyan;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}
+#newstext {
+    color: blue;
+}
+.sidebar {
+    border: 1px solid black;
+}
+.footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color: blue;
+    background-color: cyan;
+    justify-content: center;
+    align-items: center;
+}
+  
