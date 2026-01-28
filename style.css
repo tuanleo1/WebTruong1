@@ -41,7 +41,8 @@ a {
   text-decoration: none;
 }
 .main-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 100px;
     width: 100%;
 }
 .wrapper {
@@ -49,19 +50,15 @@ a {
   grid-template-columns: 100px 1fr;
 }
 .news {
-    display: flex;
-    flex-direction: column;
     color: white;
     background-color: rgb(132, 186, 243);
     font-size: 16px;
-    padding: 5px;
 }
 #newstext {
-    color: blue;
+    color: black;
 }
 .sidebar {
     border: .5px solid black;
-    margin: 5px;
 }
 .footer {
     display: flex;
