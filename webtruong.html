@@ -7,39 +7,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="javascript.js"></script>
   <div class="outer">
-    <!-- Header -->
+  <!-- Header -->
+    <!-- Mobile menu -->
     <div class="header">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">☰</label>
-      <img class="logo" src="//thptbocbo.thainguyen.edu.vn/upload/47864/20250907/logo_truong_THPT_Boc_Bo_44ab8.jpg" alt="logo" alt="logo">
+      <div class="menu-icon" id="menuBtn" hidden>☰</div>
+      <img class="logo" src="//thptbocbo.thainguyen.edu.vn/upload/47864/20250907/logo_truong_THPT_Boc_Bo_44ab8.jpg">
       <h2>TRƯỜNG THPT BỘC BỐ</h2>
     </div>
+    <div class="menubar" id="mobileMenu">
+      <aside class="navigation">
+        <nav>
+          <ul>
+            <li><a href="webtruong.html" class="navbox">Trang chủ</a></li>
+            <li><a href="thongtin.html" class="navbox">Thông tin</a></li>
+            <li><a href="tracuu.html" class="navbox">Tra cứu</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  <!-- Main Layout -->
   <div class="wrapper">
     <!-- Navigation -->
     <div class="sidebar">
       <aside class="navigation">
         <nav>
-          <ul>
-            <li><a href="webtruong.html" class="navbox">Trang chủ</a></li>
-            <li><a href="thongtin.html" class="navbox">Thông tin</a></li>
-            <li><a href="tracuu.html" class="navbox">Tra cứu</a></li>
-          </ul>
+          <a href="webtruong.html" class="navbox">Trang chủ</a>
+          <a href="thongtin.html" class="navbox">Thông tin</a>
+          <a href="tracuu.html" class="navbox">Tra cứu</a>
         </nav>
       </aside>
     </div>
-    <div class="menubar">
-      <aside class="navigation">
-        <nav>
-          <ul>
-            <li><a href="webtruong.html" class="navbox">Trang chủ</a></li>
-            <li><a href="thongtin.html" class="navbox">Thông tin</a></li>
-            <li><a href="tracuu.html" class="navbox">Tra cứu</a></li>
-          </ul>
-        </nav>
-      </aside>
-    </div>
-    <!-- Main -->
+    <!-- Main Content -->
     <div class="main-content">
         <h1 style="font-size: 20px;">Lịch sử và quá trình phát triển của Trường THPT Bộc Bố</h1>
         <strong>1. Sự hình thành và tên gọi</strong>
@@ -63,10 +63,18 @@
   </div>
     <!-- Footer -->
     <div class="footer">
-      <p>Liên hệ Nhà Trường Bằng SĐT: <strong>0379586338</strong></p>
+      <p>Liên hệ Nhà Trường Bằng SĐT: <strong>0379 586 338</strong></p>
       <p style="color: gray;">@2026 THPT Boc Bo</p> 
     </div>
   </div>
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
 

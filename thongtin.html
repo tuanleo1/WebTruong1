@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="javascript.js"></script>
   <div class="outer">
-    <!-- Header -->
+  <!-- Header -->
+    <!-- Mobile menu -->
     <div class="header">
-      <button class="menu-icon">☰</button>
-      <img class="logo" src="//thptbocbo.thainguyen.edu.vn/upload/47864/20250907/logo_truong_THPT_Boc_Bo_44ab8.jpg" alt="logo" alt="logo">
+      <div class="menu-icon" id="menuBtn" hidden>☰</div>
+      <img class="logo" src="//thptbocbo.thainguyen.edu.vn/upload/47864/20250907/logo_truong_THPT_Boc_Bo_44ab8.jpg">
       <h2>TRƯỜNG THPT BỘC BỐ</h2>
     </div>
-  <div class="wrapper">
-    <!-- Navigation -->
-    <div class="sidebar">
+    <div class="menubar" id="mobileMenu">
       <aside class="navigation">
         <nav>
           <ul>
@@ -27,17 +27,36 @@
         </nav>
       </aside>
     </div>
-    <!-- Main -->
+  <!-- Main Layout -->
+  <div class="wrapper">
+    <!-- Navigation -->
+    <div class="sidebar">
+      <aside class="navigation">
+        <nav>
+          <a href="webtruong.html" class="navbox">Trang chủ</a>
+          <a href="thongtin.html" class="navbox">Thông tin</a>
+          <a href="tracuu.html" class="navbox">Tra cứu</a>
+        </nav>
+      </aside>
+    </div>
+    <!-- Main Content -->
     <div class="main-content">
-      <h3>Siêu nhiều thông tin hữu ích</h3>
+      <h2>Thông tin</h2>
     </div>
   </div>
     <!-- Footer -->
     <div class="footer">
-      <p>Liên hệ Nhà Trường Bằng SĐT: <strong>0379586338</strong></p>
+      <p>Liên hệ Nhà Trường Bằng SĐT: <strong>0379 586 338</strong></p>
       <p style="color: gray;">@2026 THPT Boc Bo</p> 
     </div>
   </div>
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
-
