@@ -15,11 +15,19 @@ body {
     display: flex;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     color: white;
     background-color: rgb(132, 186, 243);
     align-items: center;
 }
 .menu-icon {
+    display: none;
+}
+input {
+    display: none;
+}
+.menubar {
     display: none;
 }
 .logo {
@@ -83,7 +91,9 @@ a {
     }
     .menu-icon {
         background-color: rgb(0, 186, 243);
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 80px;
         height: 80px;
         border: none;
@@ -93,6 +103,25 @@ a {
     }
     .menu-icon:hover {
         background-color: rgb(99, 186, 243);
+    }
+    .menubar {
+        position: fixed;
+        left: 0;
+        top: 100px;
+        display: none;
+        top: 100px;
+        width: 204px;
+        height: 100%;
+        cursor: pointer;
+    }
+    input {
+        display: block;
+    }
+    #menu-toogle {
+        display: none;
+    }
+    #menu-toogle:checked ~ .menubar {
+        display: block;
     }
 }
   
